@@ -1,0 +1,26 @@
+{
+  "name": "bootstrap_exercise",
+  "description": "A simple playground of latest BS 3.3.7",
+  "main": "index.html",
+  "authors": [
+    "Vladimir Varbanov"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "bootstrap",
+    "playground"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "livereload-js": "livereload#^2.2.1"
+  }
+}

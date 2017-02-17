@@ -1,0 +1,27 @@
+{
+  "name": "bootstrap_exercise",
+  "version": "1.0.0",
+  "description": "A simple playground of latest BS 3.3.7",
+  "main": "index.js",
+  "author": "Vladimir Varbanov",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladyn/bs3-grid-example.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "playground"
+  ],
+  "bugs": {
+    "url": "https://github.com/vladyn/bs3-grid-example/issues"
+  },
+  "homepage": "https://github.com/vladyn/bs3-grid-example#readme"
+}
