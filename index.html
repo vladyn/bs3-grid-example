@@ -16,10 +16,12 @@
 			</div>
 			<div class="row">
 				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" itemscope itemtype="http://schema.org/Organization">
+                    <!-- Organization title micro data -->
                     <span class="hidden" itemprop="name">Organization name</span>
+                    <!-- Listing type 1 -->
                     <div class="panel panel-default panel-invert">
-                        <div class="panel-heading">
-                            <h2 class="panel-title" itemscope itemtype="http://schema.org/Organization" itemprop="department">Department name</h2>
+                        <div class="panel-heading" itemscope itemtype="http://schema.org/Organization" itemprop="department">
+                            <h2 class="panel-title" itemprop="name">Department name</h2>
                         </div>
                         <div class="panel-body" itemscope itemtype="http://schema.org/Organization">
                             <!-- Entry 1 -->
@@ -27,7 +29,7 @@
                                 <dt class="col-xs-12 col-sm-6">
                                     <strong itemprop="additionalType">Sub department name</strong>
                                 </dt>
-                                <dd class="col-xs-12 col-sm-6" itemprop="contactPoint">
+                                <dd class="col-xs-12 col-sm-6">
                                     <span class="col-xs-12" itemprop="telephone">Tel. +359 888888</span>
                                     <span class="col-xs-12" itemprop="faxNumber">Fax +359 989898</span>
                                     <span class="col-xs-12" itemprop="email"><a href="mailto:">email@mail.com</a></span>
@@ -38,42 +40,111 @@
                                 <dt class="col-xs-12 col-sm-6">
                                     <strong itemprop="additionalType">Sub department name</strong>
                                 </dt>
-                                <dd class="col-xs-12 col-sm-6" itemprop="contactPoint">
+                                <dd class="col-xs-12 col-sm-6">
                                     <span class="col-xs-12" itemprop="telephone">Tel. +359 888888</span>
                                     <span class="col-xs-12" itemprop="faxNumber">Fax +359</span>
-                                    <span class="col-xs-12" itemprop="email"><aitemprop="email">email@mail.com</a></span>
+                                    <span class="col-xs-12" itemprop="email"><a href="mailto:" itemprop="email">email@mail.com</a></span>
                                 </dd>
                             </dl>
                         </div>
                     </div>
-
-                    <div class="panel panel-default panel-normal" itemscope itemtype="http://schema.org/Organization">
+                    <!-- Listing type 2 -->
+                    <div class="panel panel-default panel-normal listing-" itemscope itemtype="http://schema.org/Organization">
                         <div class="panel-heading">
                             <h2 class="panel-title" itemprop="department">Department name</h2>
                         </div>
                         <div class="panel-body" itemscope itemtype="http://schema.org/Organization">
                             <!-- Entry 1 -->
-                            <dl class="list-group" itemscope itemtype="http://schema.org/Person">
-                                <dt class="list-group-item member-attr">
+                            <ul class="list-group" itemscope itemtype="http://schema.org/Person">
+                                <li class="list-group-item member-name">
+                                    <strong itemprop="name">Person name</strong>
+                                    <div class="entry-details">
+                                        <span itemprop="telephone">Tel. +359 888888</span>
+                                        <span itemprop="faxNumber">Fax +359 989898</span>
+                                        <span><a href="mailto:" itemprop="email">email@mail.com</a></span>
+                                        <span itemprop="sameAs"><a href="#">@name</a> (Twitter)</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- Entry 2 -->
+                            <ul class="list-group" itemscope itemtype="http://schema.org/Person">
+                                <li class="list-group-item member-name">
+                                    <strong itemprop="name">Person name</strong>
+                                    <div class="entry-details">
+                                        <span itemprop="telephone">Tel. +359 888888</span>
+                                        <span itemprop="faxNumber">Fax +359 989898</span>
+                                        <span><a href="mailto:" itemprop="email">email@mail.com</a></span>
+                                        <span itemprop="sameAs"><a href="#">@name</a> (Twitter)</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- Entry 3 -->
+                            <ul class="list-group" itemscope itemtype="http://schema.org/Person">
+                                <li class="list-group-item member-name">
+                                    <strong itemprop="name">Person name</strong>
+                                    <div class="entry-details">
+                                        <span itemprop="telephone">Tel. +359 888888</span>
+                                        <span itemprop="faxNumber">Fax +359 989898</span>
+                                        <span><a href="mailto:" itemprop="email">email@mail.com</a></span>
+                                        <span itemprop="sameAs"><a href="#">@name</a> (Twitter)</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Listing type 3 -->
+                    <div class="panel panel-default panel-normal">
+                        <div class="panel-heading" itemscope itemtype="http://schema.org/Organization" itemprop="department">
+                            <h2 class="panel-title" itemprop="name">Department name</h2>
+                        </div>
+                        <div class="panel-body" itemscope itemtype="http://schema.org/Person">
+                            <!-- Entry 1 -->
+                            <dl class="row">
+                                <dt class="col-xs-12 col-sm-6">
                                     <strong itemprop="name">Person name</strong>
                                 </dt>
-                                <dd class="row" itemprop="contactPoint">
+                                <dd class="col-xs-12 col-sm-6">
                                     <span class="col-xs-12" itemprop="telephone">Tel. +359 888888</span>
                                     <span class="col-xs-12" itemprop="faxNumber">Fax +359 989898</span>
-                                    <span class="col-xs-12"><a href="mailto:" itemprop="email">email@mail.com</a></span>
-                                    <span class="col-xs-12" itemprop="sameAs"><a href="#">@name</a> (Twitter)</span>
+                                    <span class="col-xs-12" itemprop="email"><a href="mailto:">email@mail.com</a></span>
                                 </dd>
                             </dl>
                             <!-- Entry 2 -->
-                            <dl class="list-group" itemscope itemtype="http://schema.org/Person">
-                                <dt class="list-group-item  member-attr">
+                            <dl class="row">
+                                <dt class="col-xs-12 col-sm-6">
                                     <strong itemprop="name">Person name</strong>
                                 </dt>
-                                <dd class="list-group-item" itemprop="contactPoint">
+                                <dd class="col-xs-12 col-sm-6">
+                                    <span class="col-xs-12" itemprop="telephone">Tel. +359 888888</span>
+                                    <span class="col-xs-12" itemprop="faxNumber">Fax +359</span>
+                                    <span class="col-xs-12" itemprop="email"><a href="mailto:" itemprop="email">email@mail.com</a></span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="panel-heading" itemscope itemtype="http://schema.org/Organization" itemprop="department">
+                            <h2 class="panel-title" itemprop="name">Department name</h2>
+                        </div>
+                        <div class="panel-body" itemscope itemtype="http://schema.org/Person">
+                            <!-- Entry 1 -->
+                            <dl class="row">
+                                <dt class="col-xs-12 col-sm-6">
+                                    <strong itemprop="name">Person name</strong>
+                                </dt>
+                                <dd class="col-xs-12 col-sm-6">
                                     <span class="col-xs-12" itemprop="telephone">Tel. +359 888888</span>
                                     <span class="col-xs-12" itemprop="faxNumber">Fax +359 989898</span>
-                                    <span class="col-xs-12"><a href="mailto:" itemprop="email">email@mail.com</a></span>
-                                    <span class="col-xs-12"><a href="#" itemprop="sameAs">@name</a> (Twitter)</span>
+                                    <span class="col-xs-12" itemprop="email"><a href="mailto:">email@mail.com</a></span>
+                                </dd>
+                            </dl>
+                            <!-- Entry 2 -->
+                            <dl class="row">
+                                <dt class="col-xs-12 col-sm-6">
+                                    <strong itemprop="name">Person name</strong>
+                                </dt>
+                                <dd class="col-xs-12 col-sm-6">
+                                    <span class="col-xs-12" itemprop="telephone">Tel. +359 888888</span>
+                                    <span class="col-xs-12" itemprop="faxNumber">Fax +359</span>
+                                    <span class="col-xs-12" itemprop="email"><a href="mailto:" itemprop="email">email@mail.com</a></span>
                                 </dd>
                             </dl>
                         </div>
