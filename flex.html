@@ -1,0 +1,31 @@
+<!doctype>
+<html>
+<head>
+<meta charset="UTF-8" />
+  <title>Flexbox grid of elements </title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" type="text/css">
+  <script src="bower_components/livereload-js/dist/livereload.js"></script>
+    <link rel="stylesheet" href="styles/custom.css">
+</head>
+<body>
+<div class="container-fluid">
+  <div class="flex-container row">
+    <aside class="col-md-3 offset-custom">Aside goes here</aside>
+    <section class="col-md-8">Section 1 Goes here</section>
+    <section class="col-md-8 col-md-offset-3 offset-custom-3">Section 2 Goes here</section>
+    <section class="col-md-12">full width comes here</section>
+    <section class="col-md-8 col-md-offset-3 offset-custom-3">Section 2 Goes here</section>
+    <section class="col-md-12">full width comes here</section>
+    <section class="col-md-8 offset-custom">Section 2 Goes here</section>
+    <aside class="col-md-3">Aside goes here</aside>
+    <div class="col-md-2 offset-custom"><h5>Col-3</h5></div>
+    <div class="col-md-3"><h5>Col-3</h5></div>
+    <div class="col-md-3"><h5>Col-3</h5></div>
+    <div class="col-md-3"><h5>Col-2</h5></div>
+    <section class="col-md-11 offset-custom well">Section spread across padded container</section>
+    <div class="col-md-6 col-half offset-custom">One Half Column</div>
+    <div class="col-md-6 col-half">One Half Column</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,3 +1,16 @@
+.col-half {
+  width: calc(50% - 4.1111115%);
+  /* 1.666666665% */
+}
+
+.offset-custom {
+  margin-left: 3.33333333%;
+}
+
+.offset-custom-3 {
+  margin-left: calc(25%% + 3.33333333%);
+}
+
 .tag {
     margin: 4px;
     padding: 0px 32px 2px 8px;
@@ -15,4 +28,50 @@
 
 .tag-blue::after {
     background-color: #00b3ee;
+}
+
+.flex-container > * {
+  box-sizing: border-box;
+  border: 1px solid lightgrey;
+  margin-bottom: 0.3%;
+}
+.flex-container > :nth-child(1) {
+  background-color: grey;
+}
+.flex-container > :nth-child(2) {
+  background-color: navy;
+  color: white;
+}
+.flex-container > :nth-child(3) {
+  background-color: plum;
+}
+.flex-container > :nth-child(4) {
+  background-color: #e2dec2;
+}
+.flex-container > :nth-child(5) {
+  background-color: #a847a9;
+  color: white;
+}
+.flex-container > :nth-child(6) {
+  background-color: #f3b6c9;
+}
+.flex-container > :nth-child(7) {
+  background-color: #a847a9;
+  color: white;
+}
+.flex-container > :nth-child(8) {
+  background-color: #5cad41;
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .offset-custom,
+  .offset-custom-3,
+  .col-half {
+    margin-left: 0.1%;
+  }
 }
