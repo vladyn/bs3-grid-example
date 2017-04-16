@@ -74,4 +74,7 @@
   .col-half {
     margin-left: 0.1%;
   }
+  .col-half {
+    width: 99.8%;
+  }
 }
