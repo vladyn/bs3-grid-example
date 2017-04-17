@@ -16,12 +16,6 @@ request.get('http://httpbin.org/get', (error, response, body) => {
 
 // now with fetch. Feetch returns promise
 fetch('No valid')
-	.then(
-		response => {
-			console.log(`Response went ok with code %d ${response.status}`)
-		}, 
-		error => {
-			console.log(`Response went NOT ok with code %d ${error.message}`);
-			return Promise.reject(error);
-		})
+	.then(response => {console.log(`Response went ok with code %d ${response.status}`)}, error => {console.log(`Response went NOT ok with code %d ${error.message}`);
+	return Promise.reject(error);})
 	.catch(error => {console.error(`There is a problem with your request end with error: ${error.message}`)});
