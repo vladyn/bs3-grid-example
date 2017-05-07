@@ -1,5 +1,5 @@
 'use strict';
-export function addTextToBody(){
+function addTextToBody(){
     const fetch = require('node-fetch');
     fetch('http://httpbin.org/get')
         .then(response => {console.log(`Response went ok with code %d ${response.status}`)}, error => {console.log(`Response went NOT ok with code %d ${error.message}`);
@@ -9,13 +9,4 @@ export function addTextToBody(){
 
 
 
-
-/** Does some stuff. */
-export function baz(qux) {
-    return qux.toLowerCase();
-}
-
-/** Does other stuff. */
-export function foo(bar) {
-    return bar.toUpperCase();
-}
+export { addTextToBody }
