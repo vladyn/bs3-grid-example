@@ -1,0 +1,1 @@
+{"version":3,"sources":["logger.js"],"names":[],"mappings":";;;;;kBAAwB,G;AAAT,SAAS,GAAT,CAAa,GAAb,EAAkB;AAC7B,QAAI,OAAO,SAAX,EAAsB;AAClB,gBAAQ,IAAR,CAAa,GAAb;AACH;AACJ","file":"logger-compiled.js","sourcesContent":["export default function foo(msg) {\n    if (msg != undefined) {\n        console.info(msg);\n    }\n}"]}
