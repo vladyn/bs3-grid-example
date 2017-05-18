@@ -7,6 +7,4 @@ function addTextToBody(){
         .catch(error => {console.error(`There is a problem with your request end with error: ${error.message}`)});
 }
 
-
-
 export { addTextToBody }
